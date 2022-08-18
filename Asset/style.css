@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+
+  /* properti pendukung */
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.flex-container-row {
+  display: flex;
+}
+
+.button {
+  flex-basis: 25%;
+
+  /* properti pendukung */
+  font-size: 1.5em;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid #000;
+  background: -webkit-linear-gradient(top, #eaeaea, #ddd);
+  cursor: pointer;
+}
+
+.button:hover {
+  font-weight: bold;
+  background: orange;
+}
+
+.display {
+  color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #333;
+  border: 1px solid #333;
+  font-size: 1.5em;
+}
+
+.operator,
+.negative,
+.equals {
+  background: #36b5ff;
+}
+
+.card {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 513px) {
+  .button {
+    padding: 20px;
+  }
+}
